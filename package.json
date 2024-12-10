@@ -2,7 +2,9 @@
   "name": "@eslint-plugin-import-bug/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "nx lint eslint-plugin-import-bug --verbose"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.0.0",
@@ -41,6 +43,7 @@
     "angular-eslint": "^19.0.0",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.31.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-preset-angular": "~14.4.0",

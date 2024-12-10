@@ -1,9 +1,11 @@
 const nx = require('@nx/eslint-plugin');
+const importPlugin = require('eslint-plugin-import');
 
 module.exports = [
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
+  importPlugin.flatConfigs.recommended,
   {
     ignores: ['**/dist'],
   },
